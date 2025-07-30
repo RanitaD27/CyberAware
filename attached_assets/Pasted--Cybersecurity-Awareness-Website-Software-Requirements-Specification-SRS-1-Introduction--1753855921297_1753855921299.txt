@@ -1,0 +1,284 @@
+# Cybersecurity Awareness Website - Software Requirements Specification (SRS)
+
+## 1. Introduction
+
+### 1.1 Purpose
+This SRS document outlines the requirements for developing a multimedia mashup website focused on cybersecurity awareness training for small to medium-sized businesses (SMBs). The website serves as an educational artifact for MIS761 Assessment Task 1.
+
+### 1.2 Scope
+The website will deliver cybersecurity education covering two main topics, designed to be consumed within a 10-minute review period. It targets business managers and staff of SMBs to enhance their cybersecurity posture.
+
+### 1.3 Target Audience
+- Primary: SMB business managers and decision-makers
+- Secondary: SMB employees and staff members
+- Tertiary: IT administrators in SMBs
+
+## 2. Overall Description
+
+### 2.1 Product Perspective
+A standalone, interactive web-based training platform that combines multiple media formats (text, images, videos, interactive elements) to deliver cybersecurity awareness content.
+
+### 2.2 Product Functions
+- **Educational Content Delivery**: Present two cybersecurity topics through multimedia
+- **Interactive Learning**: Engage users with interactive elements and assessments
+- **Business-Specific Context**: Tailor content to SMB environments
+- **Progress Tracking**: Allow users to track their learning progress
+
+### 2.3 User Characteristics
+- Varying levels of technical expertise (beginner to intermediate)
+- Time-constrained business professionals
+- Mobile and desktop users
+- Users seeking practical, actionable cybersecurity guidance
+
+## 3. Recommended Cybersecurity Topics for SMBs
+
+### Topic 1: Phishing and Social Engineering Attacks
+**Rationale**: Most common attack vector affecting SMBs
+**Content Areas**:
+- Email phishing identification
+- Social engineering tactics
+- Real-world case studies
+- Prevention strategies
+- Incident response procedures
+
+### Topic 2: Password Security and Multi-Factor Authentication (MFA)
+**Rationale**: Fundamental security practice with immediate implementation potential
+**Content Areas**:
+- Password best practices
+- Password managers
+- MFA implementation
+- Account security measures
+- Business policy recommendations
+
+## 4. Functional Requirements
+
+### 4.1 Homepage Requirements
+- **FR-1.1**: Display engaging hero section with cybersecurity theme
+- **FR-1.2**: Provide clear navigation to both topic sections
+- **FR-1.3**: Include business profile integration
+- **FR-1.4**: Show estimated completion time (10 minutes total)
+- **FR-1.5**: Display progress indicator
+
+### 4.2 Topic Section Requirements
+- **FR-2.1**: Present content in digestible chunks (2-3 minutes per section)
+- **FR-2.2**: Include multimedia elements (images, videos, animations)
+- **FR-2.3**: Provide interactive elements (quizzes, checkboxes, hover effects)
+- **FR-2.4**: Include real-world examples and case studies
+- **FR-2.5**: Offer actionable recommendations
+- **FR-2.6**: Enable smooth transitions between content sections
+
+### 4.3 Interactive Elements
+- **FR-3.1**: Knowledge check quizzes after each topic
+- **FR-3.2**: Interactive threat identification exercises
+- **FR-3.3**: Clickable infographics and diagrams
+- **FR-3.4**: Expandable content sections
+- **FR-3.5**: Hover effects for additional information
+
+### 4.4 Business Integration
+- **FR-4.1**: Display business profile information
+- **FR-4.2**: Contextualize threats to specific business sector
+- **FR-4.3**: Provide industry-specific examples
+- **FR-4.4**: Include relevant compliance information
+
+### 4.5 Assessment and Feedback
+- **FR-5.1**: Provide immediate feedback on interactive elements
+- **FR-5.2**: Display completion status
+- **FR-5.3**: Offer additional resources and next steps
+- **FR-5.4**: Include contact information for further assistance
+
+## 5. Non-Functional Requirements
+
+### 5.1 Performance Requirements
+- **NFR-1.1**: Page load time < 3 seconds
+- **NFR-1.2**: Smooth animations and transitions
+- **NFR-1.3**: Optimized multimedia content
+- **NFR-1.4**: Total content consumption time ≤ 10 minutes
+
+### 5.2 Usability Requirements
+- **NFR-2.1**: Intuitive navigation structure
+- **NFR-2.2**: Mobile-responsive design
+- **NFR-2.3**: Accessible design (WCAG 2.1 AA compliance)
+- **NFR-2.4**: Clear visual hierarchy
+- **NFR-2.5**: Consistent design language
+
+### 5.3 Compatibility Requirements
+- **NFR-3.1**: Cross-browser compatibility (Chrome, Firefox, Safari, Edge)
+- **NFR-3.2**: Mobile device compatibility (iOS/Android)
+- **NFR-3.3**: Tablet compatibility
+- **NFR-3.4**: Screen resolution adaptability (320px - 1920px+)
+
+### 5.4 Security Requirements
+- **NFR-4.1**: HTTPS implementation
+- **NFR-4.2**: Secure media hosting
+- **NFR-4.3**: No user data collection (privacy-focused)
+
+## 6. Technical Specifications
+
+### 6.1 Technology Stack (Replit-Compatible)
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Styling**: CSS Grid/Flexbox, CSS Animations
+- **Media**: MP4 videos, WebP/JPEG images, SVG graphics
+- **Interactivity**: Vanilla JavaScript or lightweight libraries
+- **Hosting**: Replit deployment
+
+### 6.2 File Structure
+```
+cybersecurity-website/
+├── index.html
+├── styles/
+│   ├── main.css
+│   ├── components.css
+│   └── responsive.css
+├── scripts/
+│   ├── main.js
+│   ├── interactions.js
+│   └── progress.js
+├── assets/
+│   ├── images/
+│   ├── videos/
+│   └── icons/
+├── components/
+│   ├── navigation.html
+│   ├── quiz.html
+│   └── progress.html
+└── README.md
+```
+
+## 7. Content Architecture
+
+### 7.1 Page Structure
+1. **Landing Page**
+   - Hero section with cybersecurity theme
+   - Business profile overview
+   - Topic navigation cards
+   - Progress indicator
+
+2. **Topic 1 Page: Phishing & Social Engineering**
+   - Introduction (30 seconds)
+   - Threat landscape (1 minute)
+   - Real-world examples (1.5 minutes)
+   - Prevention strategies (1.5 minutes)
+   - Interactive quiz (30 seconds)
+
+3. **Topic 2 Page: Password Security & MFA**
+   - Password vulnerabilities (30 seconds)
+   - Best practices (1.5 minutes)
+   - MFA implementation (1.5 minutes)
+   - Business policies (1 minute)
+   - Interactive assessment (30 seconds)
+
+4. **Completion Page**
+   - Summary of key learnings
+   - Next steps and resources
+   - Business-specific recommendations
+
+### 7.2 Multimedia Integration
+- **Videos**: 2-3 short explainer videos (30-60 seconds each)
+- **Images**: Infographics, screenshots, threat examples
+- **Interactive Elements**: Clickable diagrams, expandable sections
+- **Animations**: CSS transitions, loading animations, progress indicators
+
+## 8. Design Requirements
+
+### 8.1 Visual Design
+- **Color Scheme**: Professional cybersecurity theme (blues, whites, accent colors)
+- **Typography**: Modern, readable fonts (system fonts for performance)
+- **Layout**: Card-based design with clear sections
+- **Imagery**: High-quality, relevant cybersecurity visuals
+
+### 8.2 User Experience
+- **Navigation**: Breadcrumb navigation, clear CTAs
+- **Feedback**: Visual feedback for interactions
+- **Accessibility**: Alt text, keyboard navigation, color contrast
+- **Loading**: Smooth loading states and transitions
+
+### 8.3 Interactive Elements
+- **Hover Effects**: Button and card hover states
+- **Progress Tracking**: Visual progress indicators
+- **Quizzes**: Multiple choice with immediate feedback
+- **Expandable Content**: Collapsible sections for detailed information
+
+## 9. Business Profile Integration
+
+### 9.1 Required Business Information
+- **Sector**: Industry classification
+- **Size**: Number of employees, revenue range
+- **Geolocation**: Geographic location and considerations
+- **Crown Jewels**: Critical assets and data
+
+### 9.2 Contextualization Strategy
+- Industry-specific threat examples
+- Sector-relevant compliance requirements
+- Geolocation-based threat landscape
+- Asset-focused protection strategies
+
+## 10. Assessment Criteria Alignment
+
+### 10.1 ULO1 Alignment (Strategic Settings)
+- Business-specific threat analysis
+- Contextual cybersecurity recommendations
+- Strategic implementation guidance
+
+### 10.2 ULO2 Alignment (Security Methodologies)
+- Practical security methodologies
+- Data protection strategies
+- Information security management practices
+
+## 11. Implementation Timeline
+
+### Phase 1: Setup and Structure (Day 1)
+- Replit project setup
+- Basic HTML structure
+- CSS framework implementation
+
+### Phase 2: Content Development (Days 2-3)
+- Topic 1 content creation
+- Topic 2 content creation
+- Multimedia integration
+
+### Phase 3: Interactivity (Day 4)
+- JavaScript functionality
+- Interactive elements
+- Progress tracking
+
+### Phase 4: Polish and Testing (Day 5)
+- Responsive design testing
+- Cross-browser compatibility
+- Performance optimization
+
+## 12. Deliverable Requirements
+
+### 12.1 Main Artifact
+- Complete website (HTML/CSS/JS files or deployed link)
+- Two cybersecurity topics covered
+- 10-minute total consumption time
+- Interactive and multimedia elements
+
+### 12.2 Supporting Documents
+- Business profile (separate Word document)
+- Self-reflection (200 words or 2-minute audio)
+- Reference list (APA7 format)
+
+## 13. Quality Assurance
+
+### 13.1 Testing Requirements
+- Cross-browser testing
+- Mobile responsiveness testing
+- Accessibility testing
+- Performance testing
+- Content accuracy verification
+
+### 13.2 Review Criteria
+- Engagement level
+- Educational effectiveness
+- Technical functionality
+- Business relevance
+- Professional presentation
+
+## 14. Success Metrics
+
+- **Completion Rate**: Users complete both topics
+- **Engagement**: High interaction with multimedia elements
+- **Learning Outcomes**: Successful quiz completion
+- **Accessibility**: Usable across devices and browsers
+- **Time Efficiency**: Content consumed within 10-minute target
