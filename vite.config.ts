@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
-import cartographer from "@replit/vite-plugin-cartographer";
+import { cartographer } from "@replit/vite-plugin-cartographer"; // ✅ Fixed import
 
 const isReplitDev = process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined;
 
@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    ...(isReplitDev ? [cartographer()] : []),
+    ...(isReplitDev ? [cartographer()] : []), // ✅ Works now
   ],
   resolve: {
     alias: {
@@ -19,15 +19,15 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"), // root of source files (where index.html lives during dev)
+  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist"), // ensures build output goes to /dist
-    emptyOutDir: true, // cleans output dir before each build
+    outDir: path.resolve(__dirname, "dist"),
+    emptyOutDir: true,
   },
   server: {
     fs: {
       strict: true,
-      deny: ["**/.*"], // prevents serving dotfiles
+      deny: ["**/.*"],
     },
   },
 });
