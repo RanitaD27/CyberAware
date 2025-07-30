@@ -1,66 +1,83 @@
-import { Play, Info, Clock, Award, Smartphone } from "lucide-react";
+import { AlertTriangle, Shield, Eye, Users, Globe, TrendingUp, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTrainingProgress } from "@/hooks/use-training-progress";
 
 export default function HeroSection() {
-  const { updateProgress } = useTrainingProgress();
-
-  const handleStartTraining = () => {
-    updateProgress(10);
-    document.getElementById('topics')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
-    <section id="overview" className="gradient-cyber text-white py-20 px-4 sm:px-6 lg:px-8">
+    <section id="overview" className="bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-up">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Learn Cybersecurity 
-              <span className="text-blue-200"> Fundamentals</span>
-            </h1>
-            <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Master essential cybersecurity concepts in just 10 minutes. Interactive lessons designed to teach you how to defend against modern cyber threats.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button 
-                onClick={handleStartTraining}
-                className="bg-white text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
-                size="lg"
-              >
-                <Play className="w-5 h-5 mr-2" />
-                Start Learning
-              </Button>
-              <Button 
-                variant="outline"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-300 border-2 border-blue-400"
-                size="lg"
-              >
-                <Info className="w-5 h-5 mr-2" />
-                Learn More
-              </Button>
-            </div>
-            <div className="flex items-center space-x-6 text-blue-100">
-              <div className="flex items-center">
-                <Clock className="w-5 h-5 mr-2" />
-                <span>10 minutes total</span>
-              </div>
-              <div className="flex items-center">
-                <Award className="w-5 h-5 mr-2" />
-                <span>2 core topics</span>
-              </div>
-              <div className="flex items-center">
-                <Smartphone className="w-5 h-5 mr-2" />
-                <span>Mobile friendly</span>
-              </div>
+        <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <div className="p-4 bg-red-600 rounded-full animate-pulse shadow-lg">
+              <AlertTriangle className="h-16 w-16 text-white" />
             </div>
           </div>
-          <div className="animate-fade-in">
-            <img 
-              src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Cybersecurity dashboard with monitoring screens" 
-              className="rounded-2xl shadow-2xl w-full h-auto"
-            />
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            Cybersecurity 
+            <span className="text-red-600"> Threats</span> Are Real
+          </h1>
+          <p className="text-2xl text-gray-700 mb-8 max-w-4xl mx-auto font-medium">
+            Every single day, millions of people worldwide become victims of cyber attacks. Learn how to recognize and defend against the threats targeting you right now.
+          </p>
+        </div>
+
+        {/* Statistics Section */}
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 text-center border border-red-200 shadow-lg">
+            <div className="text-3xl font-bold text-red-600 mb-2">4.8 Billion</div>
+            <div className="text-gray-700 font-medium">Data records exposed in 2024</div>
+          </div>
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 text-center border border-orange-200 shadow-lg">
+            <div className="text-3xl font-bold text-orange-600 mb-2">$12.9 Million</div>
+            <div className="text-gray-700 font-medium">Average data breach cost</div>
+          </div>
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 text-center border border-yellow-200 shadow-lg">
+            <div className="text-3xl font-bold text-yellow-600 mb-2">91%</div>
+            <div className="text-gray-700 font-medium">Of attacks start with phishing</div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 mb-8 max-w-3xl mx-auto border border-red-200 shadow-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Don't Be a Statistic</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Learn to identify the most common cyber threats and protect yourself with simple, effective strategies that take just minutes to implement.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                onClick={() => document.getElementById('awareness')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors shadow-lg"
+                size="lg"
+              >
+                <Eye className="w-5 h-5 mr-2" />
+                See Real Threats
+              </Button>
+              <Button 
+                onClick={() => document.getElementById('topics')?.scrollIntoView({ behavior: 'smooth' })}
+                variant="outline"
+                className="border-2 border-red-600 text-red-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-50 transition-colors"
+                size="lg"
+              >
+                <Shield className="w-5 h-5 mr-2" />
+                Learn Protection
+              </Button>
+            </div>
+          </div>
+          
+          {/* Real-time threat indicators */}
+          <div className="flex justify-center items-center gap-8 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+              <span>Live threats detected globally</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
+              <span>New scams reported daily</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse"></div>
+              <span>Passwords compromised hourly</span>
+            </div>
           </div>
         </div>
       </div>

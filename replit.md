@@ -1,8 +1,8 @@
-# CyberEdu Academy - Cybersecurity Awareness Learning Platform
+# Cyber Awareness Hub - Interactive Cybersecurity Threat Education
 
 ## Overview
 
-CyberEdu Academy is a multimedia cybersecurity awareness training website designed for educational purposes. The platform delivers educational content on two core cybersecurity topics through an interactive, web-based experience that can be completed in approximately 10 minutes.
+Cyber Awareness Hub is an interactive cybersecurity awareness website designed specifically for college students and educational presentations. The platform showcases real cyber threats, live attack statistics, and practical protection strategies against the most common attacks targeting people today. Built for educational demonstration and awareness rather than business or tutorial purposes.
 
 ## User Preferences
 
