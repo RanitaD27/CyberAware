@@ -33,19 +33,19 @@ export default function TopicModal({ topicNumber, onClose }: TopicModalProps) {
           title: "What is Phishing?",
           content: "Phishing is a cyberattack where criminals impersonate legitimate organizations to steal sensitive information like passwords, credit card numbers, or personal data. These attacks typically arrive via email but can also occur through text messages, phone calls, or fake websites.",
           image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-          fact: "91% of cyberattacks start with a phishing email, making it the #1 threat to SMBs."
+          fact: "91% of cyberattacks start with a phishing email, making it the #1 threat to organizations."
         },
         {
           title: "Common Phishing Tactics",
           content: "Attackers use urgency, fear, and authority to manipulate victims. They create fake websites that look identical to legitimate ones, use official logos and branding, and often claim there's an urgent problem that requires immediate action.",
           image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-          fact: "Phishing attacks have increased by 65% in the last year, with SMBs being 3x more likely to be targeted."
+          fact: "Phishing attacks have increased by 65% in the last year, with small organizations being 3x more likely to be targeted."
         },
         {
           title: "Real-World Examples",
           content: "A local accounting firm received an email appearing to be from their bank, asking them to verify account details. The email looked legitimate but contained a malicious link that would have stolen their banking credentials.",
           image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-          fact: "The average cost of a successful phishing attack on an SMB is $1.6 million."
+          fact: "The average cost of a successful phishing attack on a small organization is $1.6 million."
         },
         {
           title: "Prevention Strategies",
@@ -100,10 +100,10 @@ export default function TopicModal({ topicNumber, onClose }: TopicModalProps) {
           fact: "MFA blocks 99.9% of automated attacks, making it one of the most effective security measures."
         },
         {
-          title: "Business Implementation",
-          content: "Develop a company password policy, require MFA for all business accounts, provide password manager licenses to employees, and regularly audit account security across your organization.",
+          title: "Personal Implementation",
+          content: "Develop a personal password strategy, enable MFA for all important accounts, use a password manager for all your accounts, and regularly review and update your account security settings.",
           image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-          fact: "Businesses with comprehensive password policies reduce security incidents by 85%."
+          fact: "People with comprehensive password strategies reduce security incidents by 85%."
         }
       ],
       quiz: {

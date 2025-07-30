@@ -1,8 +1,8 @@
-# CyberGuard SMB - Cybersecurity Awareness Training Platform
+# CyberEdu Academy - Cybersecurity Awareness Learning Platform
 
 ## Overview
 
-CyberGuard SMB is a multimedia cybersecurity awareness training website designed specifically for small to medium-sized businesses (SMBs). The platform delivers educational content on two core cybersecurity topics through an interactive, web-based experience that can be completed in approximately 10 minutes.
+CyberEdu Academy is a multimedia cybersecurity awareness training website designed for educational purposes. The platform delivers educational content on two core cybersecurity topics through an interactive, web-based experience that can be completed in approximately 10 minutes.
 
 ## User Preferences
 
@@ -43,7 +43,7 @@ Preferred communication style: Simple, everyday language.
 - **Navigation**: Sticky header with mobile-responsive menu
 - **Hero Section**: Call-to-action with gradient background and feature highlights
 - **Progress Tracking**: Visual progress bars and milestone indicators
-- **Business Profiling**: Industry-specific contextual information
+- **Educational Features**: Interactive learning with real-world examples
 - **Interactive Features**: Video content placeholders and knowledge checks
 
 ### Content Management

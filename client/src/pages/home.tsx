@@ -23,24 +23,24 @@ export default function Home() {
             <div>
               <div className="flex items-center mb-4">
                 <Shield className="w-8 h-8 text-blue-500 mr-3" />
-                <span className="text-xl font-bold">CyberGuard SMB</span>
+                <span className="text-xl font-bold">CyberEdu Academy</span>
               </div>
-              <p className="text-slate-400">Empowering small and medium businesses with essential cybersecurity knowledge.</p>
+              <p className="text-slate-400">Empowering everyone with essential cybersecurity knowledge and skills.</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-slate-400">
                 <li><a href="#overview" className="hover:text-white transition-colors">Overview</a></li>
-                <li><a href="#topics" className="hover:text-white transition-colors">Training Topics</a></li>
+                <li><a href="#topics" className="hover:text-white transition-colors">Learning Modules</a></li>
                 <li><a href="#progress" className="hover:text-white transition-colors">Progress</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
+              <h4 className="font-semibold mb-4">Learning Resources</h4>
               <ul className="space-y-2 text-slate-400">
-                <li><a href="#" className="hover:text-white transition-colors">Best Practices</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Study Guides</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Templates</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Additional Reading</a></li>
               </ul>
             </div>
             <div>
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 CyberGuard SMB. All rights reserved. | Designed for educational purposes.</p>
+            <p>&copy; 2024 CyberEdu Academy. All rights reserved. | Designed for educational purposes.</p>
           </div>
         </div>
       </footer>

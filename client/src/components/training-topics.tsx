@@ -24,7 +24,7 @@ export default function TrainingTopics() {
       borderColor: "border-red-100",
       buttonColor: "bg-red-600 hover:bg-red-700",
       image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      description: "Learn to identify and defend against the most common attack vector targeting SMBs. Master email security, social engineering tactics, and incident response.",
+      description: "Learn to identify and defend against the most common cyber attack method. Understand email security, social engineering tactics, and how to respond to threats.",
       features: [
         "Email phishing identification",
         "Social engineering tactics",
@@ -42,12 +42,12 @@ export default function TrainingTopics() {
       borderColor: "border-blue-100",
       buttonColor: "bg-blue-700 hover:bg-blue-900",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      description: "Implement fundamental security practices with immediate impact. Learn password best practices, manager tools, and multi-factor authentication setup.",
+      description: "Implement fundamental security practices to protect your accounts. Learn password best practices, manager tools, and multi-factor authentication setup.",
       features: [
         "Password best practices",
         "Password manager setup",
         "MFA implementation",
-        "Business policy templates"
+        "Security implementation guides"
       ]
     }
   ];
@@ -57,8 +57,8 @@ export default function TrainingTopics() {
       <section id="topics" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Core Training Topics</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Master the two most critical cybersecurity areas that affect SMBs every day</p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Core Learning Modules</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Master the two most critical cybersecurity areas that everyone should understand</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">

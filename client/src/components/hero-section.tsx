@@ -16,11 +16,11 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Protect Your Business with 
-              <span className="text-blue-200"> Smart Cybersecurity</span>
+              Learn Cybersecurity 
+              <span className="text-blue-200"> Fundamentals</span>
             </h1>
             <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Master essential cybersecurity skills in just 10 minutes. Designed specifically for small and medium-sized businesses to defend against modern cyber threats.
+              Master essential cybersecurity concepts in just 10 minutes. Interactive lessons designed to teach you how to defend against modern cyber threats.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button 
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 size="lg"
               >
                 <Play className="w-5 h-5 mr-2" />
-                Start Training
+                Start Learning
               </Button>
               <Button 
                 variant="outline"

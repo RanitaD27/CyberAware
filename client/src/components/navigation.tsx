@@ -10,7 +10,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Shield className="w-8 h-8 text-blue-700 mr-3" />
-            <span className="text-xl font-bold text-slate-900">CyberGuard SMB</span>
+            <span className="text-xl font-bold text-slate-900">CyberEdu Academy</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#overview" className="text-slate-600 hover:text-blue-700 transition-colors">Overview</a>
@@ -30,7 +30,7 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-slate-200">
             <div className="flex flex-col space-y-4">
               <a href="#overview" className="text-slate-600 hover:text-blue-700 transition-colors">Overview</a>
-              <a href="#topics" className="text-slate-600 hover:text-blue-700 transition-colors">Training Topics</a>
+              <a href="#topics" className="text-slate-600 hover:text-blue-700 transition-colors">Learning Modules</a>
               <a href="#progress" className="text-slate-600 hover:text-blue-700 transition-colors">Progress</a>
             </div>
           </div>
