@@ -14,7 +14,7 @@ export default function Navigation() {
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#overview" className="text-slate-600 hover:text-blue-700 transition-colors">Overview</a>
-            <a href="#topics" className="text-slate-600 hover:text-blue-700 transition-colors">Training Topics</a>
+            <a href="#topics" className="text-slate-600 hover:text-blue-700 transition-colors">Learning Modules</a>
             <a href="#progress" className="text-slate-600 hover:text-blue-700 transition-colors">Progress</a>
           </div>
           <button 
